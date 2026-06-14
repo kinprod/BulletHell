@@ -76,7 +76,7 @@ public class Attack2 : FsmState
     private async Task BackIdle()
     {
         await Task.Delay((int)_timeOnState * 1000);
-        FSM.SetState<IdleState>();
+        Fsm.SetState<IdleState>();
     }
 
     private async Task BulletTimer()

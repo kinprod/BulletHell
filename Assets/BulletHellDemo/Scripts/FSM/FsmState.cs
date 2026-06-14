@@ -5,11 +5,11 @@ namespace Fsm
 {
     public abstract class FsmState
     {
-        protected readonly Fsm @Fsm;
+        protected readonly Fsm Fsm;
 
         public FsmState(Fsm fsm)
         {
-            @Fsm = fsm;
+            Fsm = fsm;
         }
 
         public virtual void Enter() { }

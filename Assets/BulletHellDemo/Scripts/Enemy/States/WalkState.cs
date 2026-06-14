@@ -53,7 +53,7 @@ public class WalkState : FsmState
     private async Task BackIdle()
     {
         await Task.Delay((int)(_timeOnState * 1000));
-        FSM.SetState<IdleState>();
+        Fsm.SetState<IdleState>();
     }
 
     private void Move()

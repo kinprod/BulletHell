@@ -49,15 +49,15 @@ public class IdleState : FsmState
 
         if (random <= _walkProbability)
         {
-            FSM.SetState<WalkState>();
+            Fsm.SetState<WalkState>();
         }
         else if (_walkProbability < random && random <= _walkProbability + _attack1Probability)
         {
-            FSM.SetState<Attack1>();
+            Fsm.SetState<Attack1>();
         }
         else if (_walkProbability + _attack1Probability < random && random <= _walkProbability + _attack1Probability + _attack2Probability)
         {
-            FSM.SetState<Attack2>();
+            Fsm.SetState<Attack2>();
         }
     }
 
